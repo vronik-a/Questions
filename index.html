@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        const quizbox = [
+            {question: 'What is 2 + 2', answer:'4'},
+            {question: 'What is the capital of South Africa', answer:'Johannesburg'},
+            {question: 'Who is the president of USA', answer:'Donald Trump'},
+            {question: 'What is the biggest cat in the jungle', answer:'lion'},
+            {question: 'What is the fastest cat in the jungle', answer:'cheetah'},
+            {question: 'Who is the world\'s best footballer', answer:'Christiano Ronaldo'},
+            {question: 'What is 100 + 3', answer:'103'},
+            {question: 'What is the name of your Javascript tutor', answer:'Raaj'},
+        ];
+
+        quizbox.map(
+            (value, index) => {
+                let userInput = prompt(value.question);
+
+                if(userInput == value.answer){
+                    alert('Great, correct!!!!!!')
+                }else{
+                    alert('Sorry, you are wrong. The correct answer is ' + value.answer )
+                }
+            }
+        )
+    </script>
+</body>
+</html>
